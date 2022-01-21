@@ -12,7 +12,7 @@ export default function SignIn() {
           
           <div className="mt-2 text-center text-3xl">
     
-              <Link to="/sing-in" className="font-extrabold text-emerald-600 sm:text-4xl sm:text-center">
+              <Link to="/sign-in" className="font-extrabold text-emerald-600 sm:text-4xl sm:text-center">
               !NeedSpAce.com
               </Link>
             </div>
@@ -20,7 +20,7 @@ export default function SignIn() {
             <h2 className="mt-6 text-center text-2xl font-bold text-gray-900">Sign in to your account</h2>
             <p className="mt-2 text-center text-sm text-gray-600">
               Or{' '}
-              <Link to="/sing-us" className="font-medium text-emerald-600 hover:text-emerald-500">
+              <Link to="/sign-us" className="font-medium text-emerald-600 hover:text-emerald-500">
                 Don't have an account? <span className="font-bold"> Sign up </span> 
               </Link>
             </p>

@@ -1,40 +1,41 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { AnnotationIcon, GlobeAltIcon, LightningBoltIcon, ScaleIcon } from '@heroicons/react/outline'
+import { AnnotationIcon, GlobeAltIcon, ReceiptTaxIcon, ShieldCheckIcon } from '@heroicons/react/outline'
 
 const features = [
   {
-    name: 'Competitive exchange rates',
+    name: 'Sufficient Properties',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Every type of property you are looking for is here.',
     icon: GlobeAltIcon,
   },
   {
-    name: 'No hidden fees',
+    name: 'Varified by us',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: ScaleIcon,
+      'Every property is varified by us and it has 100% real photos.',
+    icon: ShieldCheckIcon,
   },
   {
-    name: 'Transfers are instant',
+    name: 'High Response Rate',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: LightningBoltIcon,
+      ' We pick sellers for you who give you priority',
+    icon: ReceiptTaxIcon,
   },
   {
-    name: 'Mobile notifications',
+    name: 'Rated & Reviewed',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Testimonials from genuine buyers are the best way to judge a seller.',
     icon: AnnotationIcon,
   },
 ]
 
 export default function FeatureSec() {
   return (
+    <>
     <div className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-emerald-600 sm:text-4xl sm:text-center">
-            A better way to send money
+          <p className="mt-2 text-3xl leading-8 uppercase font-extrabold tracking-tight text-emerald-600 sm:text-4xl sm:text-center">
+          Hey ! We are here for you
           </p>
         </div>
 
@@ -55,5 +56,7 @@ export default function FeatureSec() {
         </div>
       </div>
     </div>
+    
+    </>
   )
 }

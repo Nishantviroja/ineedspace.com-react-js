@@ -10,7 +10,7 @@ export default function SignUs() {
           <div>
             <div className="mt-2 text-center text-3xl">
               <Link
-                to="/sing-us"
+                to="/sign-us"
                 className="font-extrabold text-emerald-600 sm:text-4xl sm:text-center"
               >
                 !NeedSpAce.com
@@ -23,7 +23,7 @@ export default function SignUs() {
             <p className="mt-2 text-center text-sm text-gray-600">
               Or{" "}
               <Link
-                to="/sing-in"
+                to="/sign-in"
                 className="font-medium text-emerald-600 hover:text-emerald-500"
               >
                 Already have an account?{" "}
@@ -70,7 +70,7 @@ export default function SignUs() {
                 Phone numbar
                 </label>
                 <input
-                  id="Phone"
+                  id="text"
                   name="Phone"
                   type="number"
                   autoComplete="Phone"

@@ -1,128 +1,60 @@
-// React JS for beginners: Tutorial 11 - Fetching a list of products
-import React from "react";
-import { Link, useParams } from "react-router-dom";
-import Data from "./Sub-Component/Data";
-import { LocationMarkerIcon } from "@heroicons/react/solid";
-import Navbar from "../Component/Navbar";
-import Footer from "../Component/Footer";
+import React from 'react'
 
-import { CurrencyRupeeIcon } from "@heroicons/react/outline";
+export default function ContactForm() {
+    return (
+        <div>
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="mt-2 mb-5 uppercase text-3xl leading-8 font-extrabold tracking-tight text-emerald-600 sm:text-4xl sm:text-center">We provide the best service</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">We are here to provide the best properties and to make your time finding property a easy one.we provide testimonials from genuine buyers are the best way to judge a seller. Better the ratings, better will be your experience.
+</p>
+    </div>
+    <div class="flex flex-wrap -m-4 text-center">
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" className="text-emerald-500 w-12 h-12 mb-3 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+</svg>
+          <h2 class="title-font font-medium text-3xl text-gray-900">50+</h2>
+          <p class="leading-relaxed">properties added daily
+</p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-emerald-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
+          </svg>
+          <h2 class="title-font font-medium text-3xl text-gray-900">1.3K</h2>
+          <p class="leading-relaxed">coustmer</p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" className="text-emerald-500 w-12 h-12 mb-3 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+</svg>
+          <h2 class="title-font font-medium text-3xl text-gray-900">74</h2>
+          <p class="leading-relaxed">properties sold</p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" className="text-emerald-500 w-12 h-12 mb-3 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+</svg>
+          <h2 class="title-font font-medium text-3xl text-gray-900">46</h2>
+          <p class="leading-relaxed">properties on rent</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-export default function PropertyOverview(props) {
-  const { id } = useParams();
-
-  return (
-    <>
-      <Navbar />
-
-      <div className="bg-white">
-        <div className="pt-6">
-          <nav aria-label="Breadcrumb">
-            <ol
-              role="list"
-              className="max-w-2xl mx-auto px-4 flex items-center space-x-2 sm:px-6 lg:max-w-7xl lg:px-8"
-            >
-              <li key="Property">
-                <div className="flex items-center">
-                  <Link
-                    to="/Property"
-                    className="mr-2 text-sm font-bold text-emerald-600"
-                  >
-                    Property
-                  </Link>
-                  <svg
-                    width={16}
-                    height={20}
-                    viewBox="0 0 16 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                    className="w-4 h-5 text-emerald-600"
-                  >
-                    <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
-                  </svg>
-                </div>
-              </li>
-
-              <li className="text-sm">
-                <Link
-                  to={`/property/${Data[id - 1].action}/${Data[id - 1].category}/${Data[id - 1].id}`}
-                  aria-current="page"
-                  className="font-bold text-gray-900 "
-                >
-                  {Data[id - 1].name}
-                </Link>
-              </li>
-            </ol>
-          </nav>
-
-          {/* Product info */}
-          <div className="max-w-2xl mx-auto pt-5 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:pt-16 lg:pb-24 lg:px-8 lg:grid lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8">
-            <div className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8"></div>
-
-            {/* Options */}
-            <div className="mt-4 lg:mt-0 lg:row-span-3">
-              <h2 className="sr-only">Product information</h2>
-              <div className="aspect-w-4 h-60 sm:overflow-hidden  lg:aspect-w-3 lg:aspect-h-4">
-                <img
-                  src={Data[id - 1].img}
-                  alt={Data[id - 1].alt}
-                  className="w-full rounded-lg h-full object-center object-cover"
-                />
-              </div>
-            </div>
-
-            <div className="py-10 lg:pt-6 lg:pb-16 lg:col-start-1 lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
-              <h1 className="text-2xl font-extrabold tracking-tight text-emerald-600 sm:text-3xl">
-                {Data[id - 1].name} 
-                
-              </h1>
-              <h3 className="mt-5 text-2xl  font-bold flex  text-black">
-                    
-                    {Data[id - 1].sqft}
-                    
-                    <div className="text-sm mt-3 ml-1 justify-center font-bold text-gray-700">sqft</div>
-                    
-                  </h3>
-              <div className="mt-10">
-                <h2 className="text-sm font-medium text-gray-900">Details</h2>
-
-                <div className="mt-4 space-y-6">
-                  <p className="text-sm text-gray-600">
-                    {Data[id - 1].description}
-                  </p>
-                </div>
-                <div className="mt-10">
-                  <button class="px-4 py-1 text-sm text-emerald-600 bg-emerald-100 font-semibold rounded-full border border-emerald-500  ">
-                    {Data[id - 1].category}
-                  </button>
-                  <button class="px-4 ml-1 py-1 text-sm text-emerald-600 bg-emerald-100 font-semibold rounded-full border border-emerald-500  ">
-                    {Data[id - 1].action}
-                  </button>
-                </div>
-                <div className="mt-3">
-                  <h3 className="mt-1 text-3xl  font-bold flex  text-emerald-600">
-                    <CurrencyRupeeIcon
-                      className="h-10 w-4 mr-2  text-emerald-600"
-                      aria-hidden="true"
-                    />{" "}
-                    {Data[id - 1].price}
-                  </h3>
-                 
-                  <h3 className=" text-sm font-medium flex  text-emerald-600">
-                    <LocationMarkerIcon
-                      className="h-5 w-4 mr-2 text-emerald-600"
-                      aria-hidden="true"
-                    />
-                    {Data[id - 1].city}, {Data[id - 1].state}
-                  </h3>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* form start */}
-          <div className="m-5">
+                 <div className="m-5">
             <div className="hidden sm:block" aria-hidden="true">
               <div className="py-5">
                 <div className="border-t border-emerald-600" />
@@ -130,21 +62,11 @@ export default function PropertyOverview(props) {
             </div>
 
             <div className="mt-10 sm:mt-0">
-              <div className="md:grid md:grid-cols-3 md:gap-6">
-                <div className="md:col-span-1">
-                  <div className="px-4 sm:px-0">
-                    <h3 className="text-lg font-medium lowercase leading-6 text-gray-900">
-                    INFORMATION FORM
-                    </h3>
-                    <p className="mt-1 text-sm text-gray-600">
-                    Your information must be valid so that we can contact you as soon as possible. Hope you find what you were looking for. We are here if you need any help please contact us. Please keep exploring properties on !NeedSpAce.Thank You.
-                    </p>
-                  </div>
-                </div>
-                <div className="mt-5 md:mt-0 md:col-span-2">
+             
+                <div className="mt-5  justify-center  md:mt-0 md:p-5 sm:p-5 md:col-span-2">
                   <form action="#" method="POST">
-                    <div className="shadow overflow-hidden sm:rounded-md">
-                      <div className="px-4 py-5 bg-emerald-100 sm:p-6">
+                    <div className="shadow  overflow-hidden sm:rounded-md">
+                      <div className="px-4 py-5 bg-blue-100 sm:p-6">
                         <div className="px-4 mb-4 sm:px-0">
                           <h3 className="text-lg font-bold uppercase text-center leading-6 text-gray-900">
                             Personal Information
@@ -241,7 +163,7 @@ export default function PropertyOverview(props) {
                         </div>
                         <div className="px-4 mt-10 mb-4 sm:px-0">
                           <h3 className="text-lg font-bold uppercase text-center leading-6 text-gray-900">
-                            Property Information
+                          Property you are looking for
                           </h3>
                           
                         </div>
@@ -259,7 +181,7 @@ export default function PropertyOverview(props) {
                               required
                               name="Property-name"
                               id="Property-name"
-                              value={Data[id - 1].name}
+                            //   value={Data[id - 1].name}
                               className="mt-1 p-2  block w-full shadow-sm sm:text-sm border-emerald-700 rounded-md"
                             />
                           </div>
@@ -276,7 +198,7 @@ export default function PropertyOverview(props) {
                               required
                               name="Property-city"
                               id="Property-city"
-                              value={Data[id - 1].city}
+                            //   value={Data[id - 1].city}
                               className="mt-1 p-2 focus:ring-emerald-500 focus:border-emerald-500 block w-full shadow-sm sm:text-sm border-emerald-700 rounded-md"
                             />
                           </div>
@@ -293,7 +215,7 @@ export default function PropertyOverview(props) {
                               required
                               name="Property-area"
                               id="Property-area"
-                              value={Data[id - 1].sqft}
+                            //   value={Data[id - 1].sqft}
                               className="mt-1 p-2 focus:ring-emerald-500 focus:border-emerald-500 block w-full shadow-sm sm:text-sm border-emerald-700 rounded-md"
                             />
                           </div>
@@ -310,7 +232,7 @@ export default function PropertyOverview(props) {
                               name="category"
                               required
                               id="category"
-                              value={Data[id - 1].category}
+                            //   value={Data[id - 1].category}
                               className="mt-1 p-2 focus:ring-emerald-500 focus:border-emerald-500 block w-full shadow-sm sm:text-sm border-emerald-700 rounded-md"
                             />
                           </div>
@@ -327,40 +249,17 @@ export default function PropertyOverview(props) {
                               required
                               name="action"
                               id="action"
-                              value={Data[id - 1].action}
+                            //   value={Data[id - 1].action}
                               className="mt-1 p-2 focus:ring-emerald-500 focus:border-emerald-500 block w-full shadow-sm sm:text-sm border-emerald-700 rounded-md"
                             />
                           </div>
                         </div>
-                        <fieldset>
-                          <div>
-                            <legend className="text-base mt-10 font-medium text-gray-900">
-                              Are you interested ?
-                            </legend>
-                          </div>
-                          <div className="mt-4 space-y-1">
-                            <div className="flex items-center">
-                              <input
-                                id="yes"
-                                name="yes"
-                                type="checkbox"
-                                className="focus:ring-emerald-500 h-4 w-4 text-emerald-600 border-gray-300"
-                              />
-                              <label
-                                htmlFor="yes"
-                                className="ml-3 block text-sm font-medium text-gray-700"
-                              >
-                                Yes, i'm
-                              </label>
-                            </div>
-                          
-                          </div>
-                        </fieldset>
+                     
                       </div>
-                      <div className="px-4 py-3 bg-emerald-200 text-right sm:px-6">
+                      <div className="px-4 py-3 justify-center  bg-emerald-200 text-right sm:px-6">
                         <button
                           type="submit"
-                          className="inline-flex justify-center py-1 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-emerald-700 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
+                          className="inline-flex uppercase justify-center py-2 px-10 border border-transparent shadow-sm text-sm font-bold rounded-md text-white bg-emerald-700 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
                         >
                           Submit
                         </button>
@@ -370,11 +269,7 @@ export default function PropertyOverview(props) {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <Footer />
-    </>
-  );
+          </div>   
+        
+    )
 }

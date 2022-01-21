@@ -4,11 +4,10 @@ import Contact from "./pages/Contact";
 import Property from "./pages/Property";
 import SignIn from "./pages/SignIn";
 import SignUs from "./pages/SignUp";
+import Action from "./Component/Action";
+import Category from "./Component/Category";
 import PropertyOverview from "./Component/PropertOverview";
-
-
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -18,16 +17,14 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/property" element={<Property />} />
-          <Route exact path="/property/:id" element={<PropertyOverview />} />
-          <Route exact path="/sing-in" element={<SignIn/>}/>
-          <Route exact path="/sing-us" element={<SignUs/>}/>
-          <Route exact path="/p" element={<PropertyOverview/>}/>
-          
-          
+          <Route exact path="/property/:action/:category/:id" element={<PropertyOverview />} />
+          <Route exact path="/property/:category" element={<Category />} />
+          <Route exact path="/property/:action" element={<Action />} />
+          <Route exact path="/sign-in" element={<SignIn/>}/>
+          <Route exact path="/sign-us" element={<SignUs/>}/>
     
         </Routes>
       </Router>
-
     </>
   );
 }

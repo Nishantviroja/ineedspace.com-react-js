@@ -31,9 +31,9 @@ export default function Navbar(props) {
   useEffect(() => { }, [location]);
 
   return (
-    <Popover className="relative bg-white">
-      <div className="max-w-8xl mx-auto">
-        <div className=" flex justify-between items-center border-b-2 border-emerald-600 py-6 md:justify-start md:space-x-10">
+    <Popover className="sticky top-0 z-40 bg-white">
+      <div className="max-w-8xl z-40 mx-auto">
+        <div className=" flex justify-between items-center border-b-2 border-emerald-600 py-2 md:justify-start md:space-x-10">
           <div className="ml-5 flex justify-start lg:w-0 lg:flex-1">
             <Link to="/" className="text-emerald-600 font-bold text-2xl ">
               !NeedSpAce.com
@@ -70,7 +70,7 @@ export default function Navbar(props) {
           <div className="hidden  md:flex items-center justify-end md:flex-1 lg:w-0">
            
             <Link
-              to="/sing-in"
+              to="/sign-in"
               className="ml-2 mr-5 whitespace-nowrap inline-flex items-center justify-center px-5 py-1 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-emerald-500 hover:bg-emerald-600"
             >
               Sign in
@@ -139,18 +139,18 @@ export default function Navbar(props) {
                 </nav>
               </div>
             </div>
-            <div className="py-6 px-5 space-y-6 bg-blue-50">
+            <div className="py-6 px-5 z-40 rounded-lg space-y-6 bg-blue-100">
               <div>
                 <Link
-                  to="/sing-in"
+                  to="/sign-in"
                   className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-emerald-600 hover:bg-emerald-700"
                 >
                   Sign in
                 </Link>
-                <p className="mt-6 text-center text-base font-medium text-gray-500">
+                <p className="mt-6 text-center text-base font-medium text-gray-900">
                   Existing customer?{" "}
                   <Link
-                    to="/sing-us"
+                    to="/sign-us"
                     className="text-emerald-600 hover:text-emerald-500"
                   >
                     Sign up
