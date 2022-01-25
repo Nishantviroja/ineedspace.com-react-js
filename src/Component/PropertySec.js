@@ -1,5 +1,4 @@
 import Data from "./Sub-Component/Data";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { LocationMarkerIcon } from "@heroicons/react/solid";
 import { CurrencyRupeeIcon } from "@heroicons/react/outline";
@@ -9,20 +8,10 @@ import { CurrencyRupeeIcon } from "@heroicons/react/outline";
 
 export default function PropertySec() {
 
-  //   const[setData]=useState(Data);
-   
-  //   const filterResult=(catItem)=>{
-
-  //   const result=Data.filter((curData)=>{
-  //     return curData.city===catItem;
-  //   });
-  //   setData(result);
-    
-  // };
+ 
 
   return (
     <div className="bg-white">
-     
       <div className="max-w-2xl mx-auto py-8 px-4 sm:py-10 sm:px-6 lg:max-w-7xl lg:px-8">
 
      
@@ -75,51 +64,7 @@ export default function PropertySec() {
             </div>
           ))}
         </div>
-      </div>
-{/* 
-      <div className="bg-emerald-300 h-16 mt-1 group w-full z-20 gap-5 sticky bottom-0 justify-center py-3 px-5 flex">
-              <button
-                className="w-full py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
-              
-              >
-                All
-              </button>
-              <button
-                className="w-full py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
-                onClick={()=>filterResult("city")}
-              >
-                House
-              </button>
-              <button
-                className="w-full py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
-                onClick={()=>filterResult("Commercial")}
-              >
-                Commercial
-              </button>
-              <button
-                className="w-full py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
-                onClick={()=>filterResult("Land")}
-              >
-                Land
-              </button>
-              <button
-                className="w-full py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
-                
-              >
-                Buy
-              </button>
-              <button
-                className="w-full py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
-              >
-                Rent
-              </button>
-              <button
-                className="w-full py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
-              >
-                Buy&Rent
-              </button>
-      </div> */}
-      
+      </div>  
     </div>
   );
 }

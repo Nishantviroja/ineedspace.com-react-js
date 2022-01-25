@@ -3,51 +3,51 @@ import React from 'react'
 export default function ContactForm() {
     return (
         <div>
-<section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col text-center w-full mb-20">
-      <h1 class="mt-2 mb-5 uppercase text-3xl leading-8 font-extrabold tracking-tight text-emerald-600 sm:text-4xl sm:text-center">We provide the best service</h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">We are here to provide the best properties and to make your time finding property a easy one.we provide testimonials from genuine buyers are the best way to judge a seller. Better the ratings, better will be your experience.
+<section className="text-gray-600 body-font">
+  <div className="container px-5 py-24 mx-auto">
+    <div className="flex flex-col text-center w-full mb-20">
+      <h1 className="mt-2 mb-5 uppercase text-3xl leading-8 font-extrabold tracking-tight text-emerald-600 sm:text-4xl sm:text-center">We provide the best service</h1>
+      <p className="lg:w-2/3 mx-auto leading-relaxed text-base">We are here to provide the best properties and to make your time finding property a easy one.we provide testimonials from genuine buyers are the best way to judge a seller. Better the ratings, better will be your experience.
 </p>
     </div>
-    <div class="flex flex-wrap -m-4 text-center">
-      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+    <div className="flex flex-wrap -m-4 text-center">
+      <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
         <svg xmlns="http://www.w3.org/2000/svg" className="text-emerald-500 w-12 h-12 mb-3 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
 </svg>
-          <h2 class="title-font font-medium text-3xl text-gray-900">50+</h2>
-          <p class="leading-relaxed">properties added daily
+          <h2 className="title-font font-medium text-3xl text-gray-900">50+</h2>
+          <p className="leading-relaxed">properties added daily
 </p>
         </div>
       </div>
-      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-emerald-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+      <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
+          <svg fill="none" stroke="currentColor" strokeLinejoin="round" strokeWidth={2} className="text-emerald-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
             <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
             <circle cx="9" cy="7" r="4"></circle>
             <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
           </svg>
-          <h2 class="title-font font-medium text-3xl text-gray-900">1.3K</h2>
-          <p class="leading-relaxed">coustmer</p>
+          <h2 className="title-font font-medium text-3xl text-gray-900">1.3K</h2>
+          <p className="leading-relaxed">coustmer</p>
         </div>
       </div>
-      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+      <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
         <svg xmlns="http://www.w3.org/2000/svg" className="text-emerald-500 w-12 h-12 mb-3 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
 </svg>
-          <h2 class="title-font font-medium text-3xl text-gray-900">74</h2>
-          <p class="leading-relaxed">properties sold</p>
+          <h2 className="title-font font-medium text-3xl text-gray-900">74</h2>
+          <p className="leading-relaxed">properties sold</p>
         </div>
       </div>
-      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+      <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
         <svg xmlns="http://www.w3.org/2000/svg" className="text-emerald-500 w-12 h-12 mb-3 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
 </svg>
-          <h2 class="title-font font-medium text-3xl text-gray-900">46</h2>
-          <p class="leading-relaxed">properties on rent</p>
+          <h2 className="title-font font-medium text-3xl text-gray-900">46</h2>
+          <p className="leading-relaxed">properties on rent</p>
         </div>
       </div>
     </div>
@@ -64,7 +64,7 @@ export default function ContactForm() {
             <div className="mt-10 sm:mt-0">
              
                 <div className="mt-5  justify-center  md:mt-0 md:p-5 sm:p-5 md:col-span-2">
-                  <form action="#" method="POST">
+                  <form action="/" method="POST">
                     <div className="shadow  overflow-hidden sm:rounded-md">
                       <div className="px-4 py-5 bg-blue-100 sm:p-6">
                         <div className="px-4 mb-4 sm:px-0">

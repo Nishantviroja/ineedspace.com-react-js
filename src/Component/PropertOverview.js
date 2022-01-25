@@ -1,6 +1,6 @@
 // React JS for beginners: Tutorial 11 - Fetching a list of products
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Data from "./Sub-Component/Data";
 import { LocationMarkerIcon } from "@heroicons/react/solid";
 import Navbar from "../Component/Navbar";
@@ -17,44 +17,7 @@ export default function PropertyOverview(props) {
 
       <div className="bg-white">
         <div className="pt-6">
-          <nav aria-label="Breadcrumb">
-            <ol
-              role="list"
-              className="max-w-2xl mx-auto px-4 flex items-center space-x-2 sm:px-6 lg:max-w-7xl lg:px-8"
-            >
-              <li key="Property">
-                <div className="flex items-center">
-                  <Link
-                    to="/Property"
-                    className="mr-2 text-sm font-bold text-emerald-600"
-                  >
-                    Property
-                  </Link>
-                  <svg
-                    width={16}
-                    height={20}
-                    viewBox="0 0 16 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                    className="w-4 h-5 text-emerald-600"
-                  >
-                    <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
-                  </svg>
-                </div>
-              </li>
-
-              <li className="text-sm">
-                <Link
-                  to={`/property/${Data[id - 1].action}/${Data[id - 1].category}/${Data[id - 1].id}`}
-                  aria-current="page"
-                  className="font-bold text-gray-900 "
-                >
-                  {Data[id - 1].name}
-                </Link>
-              </li>
-            </ol>
-          </nav>
+          
 
           {/* Product info */}
           <div className="max-w-2xl mx-auto pt-5 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:pt-16 lg:pb-24 lg:px-8 lg:grid lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8">
@@ -93,10 +56,10 @@ export default function PropertyOverview(props) {
                   </p>
                 </div>
                 <div className="mt-10">
-                  <button class="px-4 py-1 text-sm text-emerald-600 bg-emerald-100 font-semibold rounded-full border border-emerald-500  ">
+                  <button className="px-4 py-1 text-sm text-emerald-600 bg-emerald-100 font-semibold rounded-full border border-emerald-500  ">
                     {Data[id - 1].category}
                   </button>
-                  <button class="px-4 ml-1 py-1 text-sm text-emerald-600 bg-emerald-100 font-semibold rounded-full border border-emerald-500  ">
+                  <button className="px-4 ml-1 py-1 text-sm text-emerald-600 bg-emerald-100 font-semibold rounded-full border border-emerald-500  ">
                     {Data[id - 1].action}
                   </button>
                 </div>
@@ -260,6 +223,7 @@ export default function PropertyOverview(props) {
                               name="Property-name"
                               id="Property-name"
                               value={Data[id - 1].name}
+                              readOnly
                               className="mt-1 p-2  block w-full shadow-sm sm:text-sm border-emerald-700 rounded-md"
                             />
                           </div>
@@ -277,6 +241,7 @@ export default function PropertyOverview(props) {
                               name="Property-city"
                               id="Property-city"
                               value={Data[id - 1].city}
+                              readOnly
                               className="mt-1 p-2 focus:ring-emerald-500 focus:border-emerald-500 block w-full shadow-sm sm:text-sm border-emerald-700 rounded-md"
                             />
                           </div>
@@ -294,6 +259,7 @@ export default function PropertyOverview(props) {
                               name="Property-area"
                               id="Property-area"
                               value={Data[id - 1].sqft}
+                              readOnly
                               className="mt-1 p-2 focus:ring-emerald-500 focus:border-emerald-500 block w-full shadow-sm sm:text-sm border-emerald-700 rounded-md"
                             />
                           </div>
@@ -311,6 +277,7 @@ export default function PropertyOverview(props) {
                               required
                               id="category"
                               value={Data[id - 1].category}
+                              readOnly
                               className="mt-1 p-2 focus:ring-emerald-500 focus:border-emerald-500 block w-full shadow-sm sm:text-sm border-emerald-700 rounded-md"
                             />
                           </div>
@@ -328,6 +295,7 @@ export default function PropertyOverview(props) {
                               name="action"
                               id="action"
                               value={Data[id - 1].action}
+                              readOnly
                               className="mt-1 p-2 focus:ring-emerald-500 focus:border-emerald-500 block w-full shadow-sm sm:text-sm border-emerald-700 rounded-md"
                             />
                           </div>
